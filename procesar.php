@@ -1,9 +1,10 @@
 <?php
 
-$databasehost = "192.168.0.2";
-$databasename = "geo_movil";
-$databaseusername ="root";
-$databasepassword = "";
+
+$databasehost = "geomovilserver.mysql.database.azure.com";
+$databasename = "geolocalizacion";
+$databaseusername ="myadmin@geomovilserver";
+$databasepassword = "Root1234";
 
 $con = mysqli_connect($databasehost,$databaseusername,$databasepassword, $databasename) or die(mysqli_error($con));
 mysqli_set_charset ($con , "utf8");
